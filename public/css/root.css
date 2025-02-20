@@ -1,0 +1,29 @@
+:root {
+    /* --header: #FFE31A;
+    --background-color : #F4F6FF;
+    --main-color : #FF2929;
+    --font-color : white;
+    --anchor-tag: #0D92F4; */
+    --font-family: "Montserrat", sans-serif;
+
+    --body: #F4F6F8;
+    --header: #1E293B;
+    --aside: #E5E7EB;
+
+    /* fonts */
+    --primary: #1F2937;
+    --seconday: #6B7280;
+    --links: #2563EB;
+
+    /* buttons */
+    --confirm: #10B981;
+    --discard: #EF4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+  }
+  

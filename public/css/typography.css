@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap");
+
+p {
+  font-size: clamp(12px, 2vw, 15px);
+}
+h4 {
+  font-size: clamp(1rem, 3vw, 2.5rem);
+}
+a {
+  font-size: clamp(12px, 2.5vw, 14px);
+  
+}
+h2 {
+  font-size:  clamp(1.3rem, 2.1rem , 2.5rem )
+}
+h3 {
+  font-size: clamp(1.2rem, 2.0rem, 2.5rem);
+  text-transform: uppercase;
+  color: var(--primary);
+
+  text-align: center  ;
+}
+label {
+  font-size: clamp(12px, 1.8vw, 14px); 
+}
+
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  font-size: clamp(10px, 2.5vw, 12px);
+  color: #929292;
+}

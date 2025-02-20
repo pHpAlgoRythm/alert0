@@ -1,0 +1,48 @@
+@import url(../css/typography.css);
+@import url(../css/root.css);
+
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid red; 
+    background-color: #f8d7da;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.warning-icon {
+    font-size: 200px;
+    color: #ffcc00;
+    margin-bottom: 50px; 
+}
+
+
+.warning-text {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 17px;
+    color: #721c24; 
+}
+
+.warning-text p {
+    margin: 0;
+    font-size: 30px;
+}

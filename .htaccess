@@ -1,0 +1,15 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Allow access only to the public folder
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Block direct access to all folders except 'public'
+RewriteCond %{REQUEST_URI} ^/(app|config|vendor|resources|private)/ [NC]
+RewriteRule ^ - [F,L]
+
+# Set default file to index.php in public folder
+DirectoryIndex public/index.php

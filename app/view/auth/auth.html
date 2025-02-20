@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../public/photos/system logo.png" type="img/x-icon">
+    <link rel="stylesheet" href="../../../public/css/mainstyle.css">
+    <title>
+        Kabankalan DRRM 
+    </title>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="side-logo">
+                <div class="logo">
+                    <img src="../../../public/photos/system logo.png" alt="">
+                   
+                </div>
+                <h4 class="side-title">"Ginapasayon ang pagserbisyo, <br>
+                     para sa kaayuhan sang tanan"</h4>
+            </div>
+
+            <div class="login-form" id="login-form">
+            <form action="../../../routes/authRoute.php?action=login" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>login</legend>
+                <div class="user-box">
+                    <label for="user">Email</label>
+                    <input type="email" id="user" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="pass-box">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="password" placeholder="Enter password" required>
+                </div>  
+
+              <a href="facebook.com" class="recovery">Forgot password?</a>
+                <div class="button-box">
+                    <button type="submit" class="submit">Login</button>
+                </div>
+
+                <p class="reg-p">Don't have an account? <span class="account" id="reg-redirect">Register</span></p>
+
+                </fieldset>
+            </form>
+            </div>
+
+            
+        </div>
+    </main>
+
+
+    <script src="../../../public/js/auth.js"></script>
+    
+</body>
+</html>

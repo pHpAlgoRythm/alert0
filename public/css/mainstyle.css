@@ -1,0 +1,177 @@
+    :root {
+        --header: #FFE31A;
+        --background-color : #F4F6FF;
+        --main-color : #FF2929;
+        --font-family: Arial, Helvetica, sans-serif;
+        --font-color : white;
+        --anchor-tag: #0D92F4;
+    }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-family);
+        }
+        
+        body {
+            background-image: url(../photos/kABANKALN.jpg); 
+            backdrop-filter: blur(5px) brightness(0.5);
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        h4 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+            color:var(--font-color);
+        }
+        .container {
+            border: 0;
+            border-radius: 20px;
+            background-color: #F4F6FF;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            height: 100%;
+           
+        }
+        
+        .side-logo {
+            width: 100%;
+            height: 500px;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: #FAB12F;
+            flex: 2; 
+            border: 0;
+            border-radius: 20px 0px 0px 20px;
+            
+        }
+        
+        .login-form {
+            padding: 1rem 2rem;
+            background-color: var(--background-color);
+            flex: 1; 
+            flex-direction: column;
+            justify-content: center;
+            border: 0;
+            border-radius: 20px;
+        }
+        
+        
+        fieldset {
+            padding: 1.5rem;
+            height: 29rem;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        fieldset legend {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        
+        
+        .login-form form fieldset  ,.reg-form form fieldset {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem 2rem;
+          
+        }
+        
+        .user-box, .pass-box, .button-box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }   
+        label {
+            font-size: 15px;
+            
+            margin-bottom: 3px;
+           
+        }
+        
+        .login-form form input, .submit,.reg-form form input, .submit {
+            padding-inline: 10px;
+            font-size: 17px;
+            width: 300px;
+            height: 40px;
+            border: 2px solid #ccc ;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            
+        }  
+        
+        input::placeholder{
+            font-size: 13px;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.1rem var(--anchor-tag);
+          }
+
+        .recovery  {
+            font-size: 17px;
+            transform: translate(80px , -25px);
+            text-decoration: none;
+            color:var(--anchor-tag) ;
+            transition: 0.15s;
+        }
+
+        .recovery:hover {
+            text-decoration: underline;
+            
+        }
+
+        .submit {
+            background-color: var(--main-color);
+            color: white;
+            font-size: 17px;
+            font-weight: bolder;
+            border: 0;
+            transition: 0.15s
+        }
+
+        .submit:hover {
+            opacity: 0.8;
+        }
+
+        .submit:active {
+            opacity: 0.5s;
+            transform: scale(0.95);
+        }
+        
+        .account {
+            text-decoration: none;
+            color: var(--anchor-tag);
+            transition: 0.15s;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .account:hover {
+            text-decoration: underline;
+        }
+
+       
+

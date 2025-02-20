@@ -1,0 +1,18 @@
+@keyframes slide-in-blurred-top {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) ;
+        opacity: 1;
+    }
+  
+  }
+  .animate  {
+    animation: slide-in-blurred-top 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
